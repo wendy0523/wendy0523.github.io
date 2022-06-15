@@ -1,5 +1,4 @@
-$primary-color:rgb(226, 158, 12);
-
+@charset "UTF-8";
 *{
     margin: 0;
     padding: 0;
@@ -9,7 +8,7 @@ body{
     
 }
 header>.container> h1{
-    color: rgb(177, 182, 24);
+    color: rgb(17, 105, 143);
     padding-top: 20px;
 }
 a{
@@ -19,10 +18,13 @@ ul,ol{
     list-style-type: none;
 }
 header{
-    background-color: rgb(67, 63, 63);
+    background-color: rgb(205, 236, 238);
 }
 header>.container>h1{
     padding-top: 30px;
+}
+header>.container>h1>a{
+    color: rgba(28, 110, 106, 0.701);
 }
 .container{
     width: 90%;
@@ -40,7 +42,7 @@ header>.container>nav>ul>li{
 }
 header>.container>nav>ul>li>a{
     line-height: 100px;
-    color: $primary-color;
+    color: rgb(21, 106, 158);
     font-size: 2em;
     letter-spacing: 2px;
 }
@@ -60,13 +62,60 @@ header>.container>nav>ul>li>a{
 .text-center{
     text-align:center;
 }
+.text-left{
+    text-align: left;
+}
+.text-right{
+    text-align: right;
+}
+.text-justify {
+    text-align: justify;
+  }
+  
 
 //區塊樣式
 .row{
     display: flex;
     flex-wrap: wrap;
+    //換行
 }
+.col-3 {
+    width: calc(100% / 5 - 40px);
+    margin: 0px 20px 40px 20px;
+    /*上右下左*/
+  }
 .col-4{
     width:calc(100% / 3 - 30px);
     margin: 0px 15px 40px 15px;
+}
+.col-6{
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 40px 15px;
+}
+.title a{
+    color: black;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+.date{
+    color: rgb(32, 148, 250);
+}
+h1{
+    font-size: 2em;
+  margin: 60px auto 30px auto;
+}
+
+footer{
+    background-color: rgb(40, 184, 188);
+    padding: 40px 0 40px 0;
+}
+dt{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+dd{
+    margin-bottom: 4px;
+}
+dd>a{
+    color: azure;
 }
