@@ -49,8 +49,16 @@ header > .container > nav > ul > li > a {
   letter-spacing: 2px;
 }
 
+.img-rounded {
+  border-radius: 10px;
+}
+
 .img-fluid {
   width: 100%;
+}
+
+.text-center {
+  text-align: center;
 }
 
 .row {
@@ -59,5 +67,6 @@ header > .container > nav > ul > li > a {
 }
 
 .col-4 {
-  width: 33.3333%;
+  width: calc(100% / 3 - 30px);
+  margin: 0px 15px 40px 15px;
 }

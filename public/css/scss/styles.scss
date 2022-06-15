@@ -44,15 +44,29 @@ header>.container>nav>ul>li>a{
     font-size: 2em;
     letter-spacing: 2px;
 }
+//===========================
 //內容區塊-------------------
+//===========================
 
+//圖片相關樣式
+.img-rounded{
+    border-radius: 10px;
+}
 .img-fluid{
     width: 100%;
 }
+
+//文字樣式
+.text-center{
+    text-align:center;
+}
+
+//區塊樣式
 .row{
     display: flex;
     flex-wrap: wrap;
 }
 .col-4{
-    width: 33.3333%;
+    width:calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
 }
