@@ -1,3 +1,50 @@
-body{
-    background-color: rgb(143, 140, 140);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+header > .container > h1 {
+  color: #b1b618;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+header {
+  background-color: #433f3f;
+}
+
+header > .container > h1 {
+  padding-top: 30px;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1140px;
+}
+
+header > .container > nav > ul {
+  display: flex;
+}
+
+header > .container > nav > ul > li {
+  margin-right: 30px;
+}
+
+header > .container > nav > ul > li > a {
+  line-height: 100px;
+  color: #e29e0c;
+  font-size: 2em;
+  letter-spacing: 2px;
 }
