@@ -44,3 +44,15 @@ header>.container>nav>ul>li>a{
     font-size: 2em;
     letter-spacing: 2px;
 }
+//內容區塊-------------------
+
+.img-fluid{
+    width: 100%;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-4{
+    width: 33.3333%;
+}
