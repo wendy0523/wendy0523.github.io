@@ -142,3 +142,16 @@ dd>a{
     width: 80%;
 
   }
+.btn-left{
+    background-color:rgb(165, 197, 200);
+    padding: 15px;
+    color: aliceblue;
+    display: block;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn-left:hover{
+    background-color: rgb(44, 160, 160);
+    color: #cbe0ed;
+}
