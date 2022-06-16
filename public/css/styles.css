@@ -115,7 +115,7 @@ h1 {
 }
 
 footer {
-  background-color: #28b8bc;
+  background-color: #a5c5c8;
   padding: 40px 0 40px 0;
 }
 
@@ -129,5 +129,5 @@ dd {
 }
 
 dd > a {
-  color: azure;
+  color: #f7ffff;
 }
