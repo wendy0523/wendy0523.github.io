@@ -2,11 +2,7 @@ h1,ul{
     margin: 0;
     padding: 0;
 }
-* {
-    margin: 0;
-    padding: 0;
-  }
-  
+
   body {
     margin: 0;
   }
@@ -75,7 +71,7 @@ section>.right{
     align-items: flex-end;
 }
 .col-4 {
-    width: calc(100% / 3 - 30px);
+    width: calc(100% / 4 - 30px);
     margin: 0px 15px 40px 15px;
   }
   
@@ -89,6 +85,13 @@ section>.right{
     /*上右下左*/
   }
     
+  .img-rounded {
+    border-radius: 10px;
+  }
+  .text-center {
+    text-align: center;
+  }
+  
 
 footer {
     background-color: #a5c5c8;

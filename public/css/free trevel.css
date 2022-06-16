@@ -4,11 +4,6 @@ h1, ul {
   padding: 0;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   margin: 0;
 }
@@ -80,7 +75,7 @@ section > .right {
 }
 
 .col-4 {
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 4 - 30px);
   margin: 0px 15px 40px 15px;
 }
 
@@ -93,6 +88,14 @@ section > .right {
   width: calc(100% / 5 - 40px);
   margin: 0px 20px 40px 20px;
   /*上右下左*/
+}
+
+.img-rounded {
+  border-radius: 10px;
+}
+
+.text-center {
+  text-align: center;
 }
 
 footer {
