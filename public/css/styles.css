@@ -89,6 +89,12 @@ header > .container > nav > ul > li > a {
   /*上右下左*/
 }
 
+.col-9 {
+  width: calc(100% / 1.3333333 - 30px);
+  margin: 0px 15px 40px 15px;
+  /*上右下左*/
+}
+
 .col-4 {
   width: calc(100% / 3 - 30px);
   margin: 0px 15px 40px 15px;
@@ -130,4 +136,23 @@ dd {
 
 dd > a {
   color: #f7ffff;
+}
+
+.breadcrumb {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.breadcrumb a {
+  color: #2b84ba;
+}
+
+.w-20 {
+  width: 20%;
+}
+
+.w-80 {
+  width: 80%;
 }
