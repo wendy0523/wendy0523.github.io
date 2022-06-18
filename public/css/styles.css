@@ -60,6 +60,7 @@ header > .container > nav > ul > li > a {
 
 .img-fluid {
   width: 100%;
+  display: block;
 }
 
 .text-center {
@@ -90,7 +91,7 @@ header > .container > nav > ul > li > a {
 }
 
 .col-9 {
-  width: calc(100% / 1.3333333 - 30px);
+  width: calc(100% / 1.333333333 - 30px);
   margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
@@ -117,7 +118,6 @@ header > .container > nav > ul > li > a {
 
 h1 {
   font-size: 2em;
-  margin: 60px auto 30px auto;
 }
 
 footer {
@@ -160,7 +160,7 @@ dd > a {
 .btn-left {
   background-color: #a5c5c8;
   padding: 15px;
-  color: aliceblue;
+  color: #485758;
   display: block;
   margin-bottom: 3px;
   border-radius: 10px;
