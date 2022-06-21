@@ -8,7 +8,7 @@ body {
   margin: 0;
 }
 
-header > .container > h1 {
+header > .container  h1 {
   color: #11698f;
   padding-top: 20px;
 }
@@ -25,11 +25,11 @@ header {
   background-color: #cdecee;
 }
 
-header > .container > h1 {
+header > .container   h1 {
   padding-top: 30px;
 }
 
-header > .container > h1 > a {
+header > .container  h1 > a {
   color: rgba(28, 110, 106, 0.701);
 }
 
@@ -39,16 +39,16 @@ header > .container > h1 > a {
   max-width: 1140px;
 }
 
-header > .container > nav > ul {
+header > .container  nav > ul {
   display: flex;
 }
 
-header > .container > nav > ul > li {
+header > .container  nav > ul > li {
   margin-right: 30px;
 }
 
-header > .container > nav > ul > li > a {
-  line-height: 100px;
+header > .container  nav > ul > li > a {
+  line-height: 60px;
   color: #156a9e;
   font-size: 2em;
   letter-spacing: 2px;
@@ -60,9 +60,15 @@ header > .container > nav > ul > li > a {
 
 .img-fluid {
   width: 100%;
-  display: block;
+  /* display: block; */
+}
+.img-rounded {
+  border-radius: 8px;
 }
 
+.img-circle {
+  border-radius: 100%;
+}
 .text-center {
   text-align: center;
 }
@@ -85,11 +91,18 @@ header > .container > nav > ul > li > a {
 }
 
 .col-3 {
-  width: calc(100% / 5 - 40px);
-  margin: 0px 20px 40px 20px;
+  width: calc(100% / 4 - 30px);
+  margin: 0px 15px 40px 15px;
   /*上右下左*/
 }
 
+/* @for $i from 1 through 12{
+    .col-#{$i}{
+      $num:calc(12 / #{$i});
+      width:calc(100% / #{$i} - 30px);
+      margin:0px 15px 40px 15px;
+     }
+} */
 .col-9 {
   width: calc(100% / 1.333333333 - 30px);
   margin: 0px 15px 40px 15px;
@@ -106,6 +119,68 @@ header > .container > nav > ul > li > a {
   margin: 0px 15px 40px 15px;
 }
 
+@media (min-width: 768px) {
+  .col-md-3 {
+    width: calc(100% / 4 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-md-4 {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-md-6 {
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-md-8 {
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-md-9 {
+    width: calc(100% / 1.33333333333 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-3 {
+    width: calc(100% / 4 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-lg-4 {
+    width: calc(100% / 3 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-lg-6 {
+    width: calc(100% / 2 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-lg-8 {
+    width: calc(100% / 1.5 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+
+  .col-lg-9 {
+    width: calc(100% / 1.33333333333 - 30px);
+    margin: 0px 15px 40px 15px;
+    /*上右下左*/
+  }
+}
 .title a {
   color: black;
   font-size: 1.2em;
@@ -118,6 +193,7 @@ header > .container > nav > ul > li > a {
 
 h1 {
   font-size: 2em;
+  margin: 60px auto 30px auto;
 }
 
 footer {
@@ -166,8 +242,188 @@ dd > a {
   border-radius: 10px;
   text-align: center;
 }
+.btn-primary:hover {
+  background: black;
+  color: #bdb3a7;
+}
+
+.text-primary {
+  color: #bdb3a7;
+}
+
+.img-wrap {
+  display: block;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.img-overlay {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.img-wrap img {
+  vertical-align: top;
+  transition: all 0.5s;
+}
+
+.img-wrap img:hover {
+  transform: scale(1.5);
+}
+
+.icon-new {
+  position: absolute;
+  width: 50px;
+  line-height: 50px;
+  color: white;
+  border-radius: 100%;
+  left: -25px;
+  top: -25px;
+  background-color: green;
+}
 
 .btn-left:hover {
   background-color: #2ca0a0;
   color: #cbe0ed;
+}
+.flex-space-between{
+  justify-content: space-between;
+}
+@media (min-width:767px){
+   /* h1 {
+     /* width: 85%; */
+     /* background-color: rgb(234, 126, 126); */
+     /* float: left; */
+    } */
+   .icon-menu{
+     /* float: right; */
+     width: 15%;
+     display: block;
+     background-color: rgb(143, 244, 253);
+     color: #2094fa;
+     line-height: 60px;
+     text-align: center;
+   }
+   header{
+        position: relative;
+   }
+   header>.container nav{
+     width: 100%;
+     position:absolute;
+     top: 60px;
+     /* left: 0px; */
+     background-color: rgb(15, 71, 161);
+     /* float: left; */
+     /* display: none; */
+     /* /蓋板 */
+     /* position: fixed;
+     top:0px;
+     height: 100vh;
+     z-index: 999; */
+   }
+  nav{
+    left:0px;
+    /* left: -100vw; */
+    transition: all .3s;
+  }
+  .icon-menu:hover + nav{
+    left: 0px;
+  }
+   header>.container nav>ul{
+     display: block;
+   
+   }
+   header>.container nav.active{
+    display: block;
+  
+   }
+   header>.container nav>ul>li{
+     text-align: center;
+     width: 100%;
+     border-bottom:1px solid #2094fa
+   }
+   header>.container nav>ul>li>a{
+    display: block;
+   }
+  .submenu{
+    background-color: #fff;
+  }
+  .submenu>li{
+    line-height: 60px;
+    border-bottom: 1px solid #000;
+  }
+  .submenu>li>a{
+    color: #000;
+    display: block;
+  }
+
+   /* .overflow-hidden{
+     overflow: hidden;
+   } */
+      /* 超過768px以上執行 */
+@media (min-width:768px){
+   .icon-menu{
+     display: none;
+    }
+}
+
+
+.fz-1 {
+  font-size: 1em;
+}
+
+.fz-2 {
+  font-size: 2em;
+}
+
+.fz-3 {
+  font-size: 3em;
+}
+
+.fz-4 {
+  font-size: 4em;
+}
+
+.fz-5 {
+  font-size: 5em;
+}
+
+.fz-6 {
+  font-size: 6em;
+}
+
+.fz-7 {
+  font-size: 7em;
+}
+
+.fz-8 {
+  font-size: 8em;
+}
+
+.fz-9 {
+  font-size: 9em;
+}
+
+.fz-10 {
+  font-size: 10em;
+}
+
+.mb-1 {
+  margin-bottom: 1em;
+}
+
+.mb-2 {
+  margin-bottom: 2em;
+}
+
+.mb-3 {
+  margin-bottom: 3em;
+}
+
+.mb-4 {
+  margin-bottom: 4em;
+}
+
+.mb-5 {
+  margin-bottom: 5em;
 }
